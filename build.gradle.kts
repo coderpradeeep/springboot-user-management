@@ -1,6 +1,7 @@
 plugins {
     id("java")
-    kotlin("jvm")
+    id("org.springframework.boot") version "3.2.5"
+    id("io.spring.dependency-management") version "1.1.4"
 }
 
 group = "org.example"
@@ -41,7 +42,4 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(17)
 }

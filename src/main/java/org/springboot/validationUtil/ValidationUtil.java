@@ -1,6 +1,6 @@
-package org.example.validationUtil;
+package org.springboot.validationUtil;
 
-import org.example.model.UserInfoDto;
+import org.springboot.model.UserInfoDto;
 import org.springframework.stereotype.Service;
 
 @Service

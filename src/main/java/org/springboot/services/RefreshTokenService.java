@@ -1,9 +1,10 @@
-package org.example.services;
+package org.springboot.services;
 
-import org.example.entities.RefreshToken;
-import org.example.entities.UserInfo;
-import org.example.repository.RefreshTokenRepo;
-import org.example.repository.UserRepo;
+import org.springboot.entities.RefreshToken;
+import org.springboot.entities.UserInfo;
+import org.springboot.model.UserInfoDto;
+import org.springboot.repository.RefreshTokenRepo;
+import org.springboot.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,6 +42,7 @@ public class RefreshTokenService {
     }
 
     public Optional<RefreshToken> findByToken(String token) {
+
         return refreshTokenRepo.findByToken(token);
     }
 }

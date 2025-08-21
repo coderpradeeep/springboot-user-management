@@ -1,4 +1,4 @@
-package org.example.request;
+package org.springboot.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

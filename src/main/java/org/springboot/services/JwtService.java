@@ -1,4 +1,4 @@
-package org.example.services;
+package org.springboot.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -6,7 +6,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import java.security.Key;
-import java.nio.charset.StandardCharsets;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -41,6 +40,11 @@ public class JwtService {
         final String username = extractUsername(token);
         return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
+
+    public String generateToken(String userName) {
+        return createToken(Map.of(), userName);
+    }
+
 
     private String createToken(Map<String, Object> claims, String username) {
         return Jwts

@@ -1,11 +1,11 @@
-package org.example.model;
+package org.springboot.model;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.example.entities.UserInfo;
+import org.springboot.entities.UserInfo;
 
 @AllArgsConstructor
 @NoArgsConstructor

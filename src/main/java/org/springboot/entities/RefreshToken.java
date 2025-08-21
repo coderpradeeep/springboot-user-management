@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.springboot.entities;
 
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;

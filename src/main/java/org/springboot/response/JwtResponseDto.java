@@ -1,13 +1,17 @@
-package org.example.request;
+package org.springboot.response;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RefreshTokenRequestDto {
+@Builder
+public class JwtResponseDto {
+
+    private String accessToken;
 
     private String token;
 }

@@ -1,11 +1,11 @@
-package org.example.services;
+package org.springboot.services;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.example.entities.UserInfo;
-import org.example.model.UserInfoDto;
-import org.example.repository.UserRepo;
-import org.example.validationUtil.ValidationUtil;
+import org.springboot.entities.UserInfo;
+import org.springboot.model.UserInfoDto;
+import org.springboot.repository.UserRepo;
+import org.springboot.validationUtil.ValidationUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -27,9 +27,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
     private final PasswordEncoder passwordEncoder;
-
-    @Autowired
-    private final ValidationUtil validationUtil;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
